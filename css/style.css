@@ -155,6 +155,12 @@ h6 {
   margin: 0;
 }
 
+
+#logo img {
+  max-width: 70%;
+  height: auto;
+}
+
 /*--------------------------------------------------------------
 # Intro Section
 --------------------------------------------------------------*/
@@ -266,6 +272,11 @@ h6 {
   background-position: center;
   background-repeat: no-repeat;
   transition-property: opacity;
+}
+
+.kepala {
+  width: 150px;
+  height: 100%;
 }
 
 /*--------------------------------------------------------------
@@ -645,6 +656,23 @@ body.mobile-nav-active #mobile-nav-toggle {
   margin-bottom: 0;
   line-height: 24px;
 }
+
+.icon img {
+  max-width: 30%;
+  max-height: 50%;  
+  display: block;
+  margin: auto;
+}
+
+#services .box .icon img {
+  display: block;
+  transition: transform 0.3s ease; /* Tambahkan transisi untuk transformasi */
+}
+
+#services .box:hover .icon img {
+  transform: scale(1.50); /* Membesarkan gambar menjadi 110% dari ukuran aslinya saat di-hover */
+}
+
 
 /* Clients Section
 --------------------------------*/
