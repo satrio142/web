@@ -787,7 +787,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #testimonials .testimonial-item .testimonial-img {
-  width: 90px;
+  width: 60%;
   border-radius: 50%;
   border: 4px solid #fff;
   margin: 0 auto;
@@ -984,8 +984,22 @@ body.mobile-nav-active #mobile-nav-toggle {
   margin-bottom: 20px;
 }
 
+.contact-email img {
+  max-width: 25%;
+  margin-bottom: 5px;
+}
+
+.contact-phone img{
+  width: 30%;
+  margin-bottom: 15px;
+}
 #contact #google-map {
   height: 290px;
+  margin-bottom: 20px;
+}
+
+.contact-address img{
+  width: 20%;
   margin-bottom: 20px;
 }
 
