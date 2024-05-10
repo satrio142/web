@@ -610,6 +610,9 @@ body.mobile-nav-active #mobile-nav-toggle {
   box-shadow: 10px 10px 15px rgba(73, 78, 92, 0.1);
   background: #fff;
   transition: 0.4s;
+  overflow: hidden; /* Mencegah konten keluar dari box */
+  height: 300px; /* Tetapkan tinggi tetap */
+  position: relative; /* Posisi relatif untuk positioning anak */
 }
 
 #services .box:hover {
@@ -632,7 +635,6 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #services .box .icon i:before {
-  background: #0c2e8a;
   background: linear-gradient(45deg, #50d8af 0%, #a3ebd5 100%);
   background-clip: border-box;
   -webkit-background-clip: text;
@@ -653,7 +655,6 @@ body.mobile-nav-active #mobile-nav-toggle {
 #services .box p {
   font-size: 14px;
   margin-left: 100px;
-  margin-bottom: 0;
   line-height: 24px;
 }
 
@@ -665,12 +666,16 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #services .box .icon img {
-  display: block;
-  transition: transform 0.3s ease; /* Tambahkan transisi untuk transformasi */
+  transition: transform 0.3s ease; /* Transisi untuk transformasi */
 }
 
 #services .box:hover .icon img {
-  transform: scale(1.50); /* Membesarkan gambar menjadi 110% dari ukuran aslinya saat di-hover */
+  transform: scale(1.40); /* Menyesuaikan faktor skala */
+}
+
+#services .box {
+  height: auto; /* Menjadikan tinggi menyesuaikan konten */
+  overflow: hidden; /* Menjaga semua konten tetap dalam box */
 }
 
 
@@ -1148,6 +1153,9 @@ body.mobile-nav-active #mobile-nav-toggle {
     margin-left: 0;
     padding-bottom: 30px;
   }
+
+  #services .box:hover .icon img {
+    transform: scale(1.20); /* Menyesuaikan faktor skala */
 }
 
 @media (max-width: 767px) {
